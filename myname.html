@@ -1,0 +1,398 @@
+<html>
+
+<head>
+
+    
+
+    <title>rotate down</title>
+
+    
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+    <script>
+
+    var d =0;
+
+    var id=1;
+
+    var n=0;
+
+    var k=0;
+
+       
+
+    $(document).ready(function(){
+
+            hello(id++);
+
+       setTimeout("hello(id++)",2000);
+
+        setTimeout("hello(id++)",4000);
+
+        setTimeout("hello(id++)",6000);
+
+        setTimeout("hello(id++)",8000);
+
+        setTimeout("hello(id++)",10000);
+
+        setTimeout("hello(id++)",12000);
+
+        setTimeout("hello(id++)",14000);
+
+        setTimeout("hello(id++)",16000);
+
+        setTimeout("hello(id++)",18000);
+
+       
+
+        setTimeout(function(){
+
+        id=1;
+
+        },20000);
+
+         
+
+        
+
+       setTimeout("next(id++)",22000);
+
+        setTimeout("next(id++)",24000);
+
+        setTimeout("next(id++)",26000);
+
+        setTimeout("next(id++)",28000);
+
+        setTimeout("next(id++)",30000);
+
+        setTimeout("next(id++)",32000);
+
+        setTimeout("next(id++)",34000);
+
+        setTimeout("next(id++)",36000);
+
+        setTimeout("next(id++)",38000);
+
+        setTimeout("next(id++)",40000);
+
+    })
+
+          
+
+        
+
+       
+
+        
+
+        function hello(id){
+
+            var i=0;
+
+            
+
+            for(i=0;i<6;i++){
+
+            var loop = $("#"+id);
+
+            
+
+            loop.animate({marginTop:"+=25"},function() {
+
+d+=60;
+
+    $(this).css({
+
+          '-moz-transform':'rotate('+d+'deg)',
+
+          '-webkit-transform':'rotate('+d+'deg)',
+
+          '-o-transform':'rotate('+d+'deg)',
+
+          '-ms-transform':'rotate('+d+'deg)',
+
+          'transform': 'rotate('+d+'deg)'
+
+     });  
+
+});
+
+               
+
+           
+
+            }
+
+            
+
+           var d=0; 
+
+            //delay( 2000 );
+
+        //next();
+
+        }
+
+        
+
+        
+
+         
+
+      
+
+        var d=0;
+
+        function next(id){
+
+        
+
+            var d=0;
+
+            var i=0;
+
+            for(i=0;i<6;i++){
+
+            var loop = $("#"+id);
+
+            
+
+            loop.animate({marginTop:"-=25"},function() {
+
+d+=60;
+
+    $(this).css({
+
+          '-moz-transform':'rotate('+d+'deg)',
+
+          '-webkit-transform':'rotate('+d+'deg)',
+
+          '-o-transform':'rotate('+d+'deg)',
+
+          '-ms-transform':'rotate('+d+'deg)',
+
+          'transform': 'rotate('+d+'deg)'
+
+     });  
+
+});
+
+               
+
+           
+
+            }
+
+        }
+
+        
+
+    </script>
+
+    
+
+    <style>
+
+         
+
+        div.container {
+
+  height: 200px;
+
+  border: 2px solid #ddd;
+
+  padding: 5px;
+
+  display: inline-block;
+
+  margin-left: 400px;
+
+            margin-top: 200px;
+
+           
+    margin-right: 300px;
+
+            align-self: center;
+
+}
+
+
+
+div.stone {
+
+  height: 20px;
+
+  width: 20px;
+
+  border: 1px solid #bbb;
+
+  border-radius: 4px;
+
+  display: inline-block;
+
+  float: left;
+
+  margin-left: 5px;
+
+  box-shadow: 0 0 5px #333;
+
+  color: white;
+
+  padding: 10px;
+
+  text-align: center;
+
+  
+
+  text-transform: uppercase;
+
+  font-size: 15px;
+
+    position:relative;
+
+}
+div.stones {
+
+  height: 20px;
+
+  width: 20px;
+
+  border: 1px solid #ffff;
+
+  border-radius: 0px;
+
+  display: inline-block;
+
+  float: left;
+
+  margin-left: 5px;
+
+
+
+  color: white;
+
+  padding: 10px;
+
+  text-align: center;
+
+  
+
+  text-transform: uppercase;
+
+  font-size: 15px;
+
+    position:relative;
+
+}
+
+
+
+
+div.stone:first-child {
+
+  margin-left: 0px;
+
+}
+
+
+
+div.green{
+
+  background-color:#6fb936;
+
+}
+
+
+
+div.orange {
+
+  background-color:#f38630;
+
+}
+
+
+
+div.grey {
+
+  background-color:#989898;
+
+}
+div.white {
+
+  background-color:#ffffff;
+
+}
+
+
+
+/* CSS code here */
+
+
+
+        
+
+        
+
+        
+
+        
+
+        
+
+        </style>
+
+    
+
+    </head>
+
+
+
+
+
+<body>
+
+
+
+    
+
+    
+
+    
+
+   <div class="container">
+
+
+
+  <div id="1" class="stone green">S</div>
+
+  <div  class="stones white"></div>
+
+
+  <div id ="2" class='stone grey'>H</div>
+
+  <div id ="3" class='stone orange'>A</div>
+
+  <div  id ="4"class='stone green'>R</div>
+
+  <div id ="5" class='stone grey'>I</div>
+
+  <div  id ="6" class='stone orange'>K</div>
+
+  <div id ="7" class='stone green'>A</div>
+
+  <div  id ="8" class='stone grey'>R</div>
+
+  <div  id ="9" class='stone orange'>A</div>
+
+  <div id ="10" class='stone green'>N</div>
+
+    </div>
+
+    
+    </body>
+
+    
+
+</html>
+
